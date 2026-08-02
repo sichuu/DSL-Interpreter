@@ -50,19 +50,11 @@ AVERAGE GPA
 EXPORT report.csv
 ```
 
-## How to run
+# Generate sample data
+python make_sample_data
 
-From the project folder, generate sample data:
-
-```powershell
-C:/Users/sichu/AppData/Local/Programs/Python/Python313/python.exe make_sample_data
-```
-
-Then run the DSL interpreter with a script file:
-
-```powershell
-C:/Users/sichu/AppData/Local/Programs/Python/Python313/python.exe main.py sample.dsl
-```
+# Run the DSL interpreter with a script file
+python main.py sample.dsl
 
 ## Output
 
