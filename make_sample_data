@@ -1,0 +1,18 @@
+"""Generates a sample students.csv to test the DSL against."""
+import csv
+import random
+
+majors = ["Computer Science", "Biology", "Economics", "History", "Physics"]
+
+with open("students.csv", "w", newline="") as f:
+    writer = csv.writer(f)
+    writer.writerow(["Name", "Major", "GPA", "Age"])
+    for i in range(1, 51):
+        writer.writerow([
+            f"Student{i}",
+            random.choice(majors),
+            round(random.uniform(2.0, 4.0), 2),
+            random.randint(18, 24),
+        ])
+
+print("Wrote students.csv")
